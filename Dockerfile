@@ -8,7 +8,7 @@ RUN apt-get install -y libgl1-mesa-glx git
 ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
-ADD jupyter_notebook_config.py /etc/jupyter_config.py
+ADD jupyter_notebook_config.py /etc/jupyter/
 
 RUN jupyter contrib nbextension install --sys-prefix
 
