@@ -485,7 +485,8 @@ c.NotebookApp.password = os.environ['TEACHER_PASSWORD']
 #c.ContentsManager.checkpoints_kwargs = {}
 
 ## Glob patterns to hide in file and directory listings.
-#c.ContentsManager.hide_globs = ['__pycache__', '*.pyc', '*.pyo', '.DS_Store', '*.so', '*.dylib', '*~']
+c.ContentsManager.hide_globs = ['__pycache__', '*.pyc', '*.pyo', '.DS_Store', '*.so', '*.dylib', '*~',
+                                'tests', 'nbgrader_config.py']
 
 ## Python callable or importstring thereof
 #  
